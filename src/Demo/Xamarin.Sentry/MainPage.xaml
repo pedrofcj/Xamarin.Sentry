@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin.Sentry"
+             Padding="20"
+             x:Class="Xamarin.Sentry.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="txtMessage" Placeholder="Your message goes here"/>
+        <Button Text="Send Info" Clicked="SendInfoButton"/>
+        <Button Text="Send Warning" Clicked="SendWarningButton"/>
+        <Button Text="Send Error" Clicked="SendErrorButton"/>
+        <Button Text="Send Fatal" Clicked="SendFatalButton"/>
+        <Button Text="Send Exception" Clicked="SendExceptionButton"/>
+        
+    </StackLayout>
+
+</ContentPage>
